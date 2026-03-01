@@ -1,0 +1,9 @@
+{
+    "configs": [
+    {
+      "m_leaf": 3000,
+      "top":    { "tau": 4e-3, "ell": 0.03, "K": 16, "grid": 8192, "seed": 7,  "alpha_hi": 12.0, "tol": 8e-7 },
+      "second": { "tau": 4e-3, "ell": 0.03, "K": 16, "grid": 8192, "seed": 77, "alpha_hi": 12.0, "tol": 8e-7 }
+    }
+    ]
+  }

@@ -1,0 +1,34 @@
+* text=auto eol=lf
+
+# Windows scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary files (never normalize line endings)
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.gif -text
+*.pdf -text
+*.docx -text
+*.xlsx -text
+*.pptx -text
+*.so -text
+*.dll -text
+*.exe -text
+*.lib -text
+*.a -text
+*.zip -text
+*.7z -text
+*.tar -text
+*.gz -text
+*.bz2 -text
+*.xz -text
+*.woff -text
+*.woff2 -text
+*.ttf -text
+*.otf -text
+*.ico -text
+*.xcf -text
+*.xcuserstate -text
