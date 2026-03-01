@@ -23,4 +23,4 @@ Please refer to the guide files in the following directories for running differe
 - **`data/`**: run data generation
 - **`src/`**: run performance benchmarking / testing
 
-This work utilizes some interfaces and tool files from [GRE](https://github.com/gre4index/GRE), as well as memory usage interfaces implemented by [Robin](https://github.com/cds-ruc/RoBin) for several indexes. We express our sincere gratitude to the author.
+This work utilizes some interfaces and tool files from [GRE](https://github.com/gre4index/GRE), as well as memory usage interfaces implemented by [Robin](https://github.com/cds-ruc/RoBin) for several indexes. We express our sincere gratitude to the authors.
