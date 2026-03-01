@@ -19,7 +19,7 @@ Benchmarking various learned indexes on datasets of varying hardness and shiftin
 
 Please refer to the guide files in the following directories for running different components:
 
-- **`hard_metric/`**: run difficulty evaluation
+- **`hard_metric/`**: run hardness evaluation
 - **`data/`**: run data generation
 - **`src/`**: run performance benchmarking / testing
 
