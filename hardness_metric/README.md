@@ -22,5 +22,3 @@ This evaluation program assumes that the dataset has **no duplicate keys**, ther
 You can find the real datasets we used, or instructions for downloading them, at:
 - `https://github.com/learnedsystems/SOSD`
 - `https://github.com/gre4index/GRE`
-
-For synthetic datasets, you may generate them yourself, or obtain them from the following link: **[to be uploaded]**
