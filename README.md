@@ -23,13 +23,4 @@ Please refer to the guide files in the following directories for running differe
 - **`data/`**: run data generation
 - **`src/`**: run performance benchmarking / testing
 
-## Citation & Acknowledgements
-
-This benchmark is developed based on **GRE**:
-- Project: https://github.com/gre4index/GRE  
-- Paper:  
-  Chaichon Wongkham, Baotong Lu, Chris Liu, Zhicong Zhong, Eric Lo, and Tianzheng Wang.  
-  *Are Updatable Learned Indexes Ready?* PVLDB, 15(11): 3004–3017, 2022.
-
-We are also inspired by **RoBin**:
-- https://github.com/cds-ruc/RoBin
+This work utilizes some interfaces and tool files from [GRE](https://github.com/gre4index/GRE), as well as memory usage interfaces implemented by [Robin](https://github.com/cds-ruc/RoBin) for several indexes. We express our sincere gratitude to the author.
