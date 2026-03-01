@@ -66,7 +66,7 @@ python3 data_generator.py \
 
 ## 3) Notes
 
-For follow-up, deeper development work: `data_generator.py` currently accepts **normalized MSE**, rather than the **unnormalized RMSE** defined in the paper. You can convert a hardness value into the normalized MSE by running:
+For follow-up, deeper development work: `data_generator.py` is currently changed to accept **normalized MSE**, rather than the **unnormalized RMSE** defined in the paper. You can convert a hardness value(RMSE) into the normalized MSE by running:
 
 ```bash
 python3 hardness_translation.py [your hardness] [local/global] [working set size] [m=3000]
