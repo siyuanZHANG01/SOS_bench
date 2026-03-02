@@ -104,3 +104,5 @@ python3 hardness_translation.py [your hardness] [local/global] [working set size
 
 Then, provide the converted normalized MSE in the JSON files used by the generator.
 
+If you don't want to generate the datasets for evaluation, you can get them here: https://drive.google.com/drive/folders/1KbViJCCT7D6MfzlPl0kBjDZeEYGLgdw2?usp=sharing
+
