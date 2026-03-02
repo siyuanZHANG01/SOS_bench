@@ -102,7 +102,7 @@ For follow-up, deeper development work on data distribution: `data_generator.py`
 python3 hardness_translation.py [your hardness] [local/global] [working set size] [m=3000]
 ```
 
-Then, provide the converted normalized MSE in the JSON files used by the generator. In the experiment, lh=190 (passing 0.004 to the generator), le=13 (passing 2e-5), gh=92 (passing 0.004), and ge=7 (passing 2e-5).
+Then, provide the converted normalized MSE in the JSON files used by the generator. In the experiment, lh=190 (passing 0.004 to the generator), le=13 (passing 2e-5), gh=92 (passing 0.004), and ge=6.5 (passing 2e-5).
 
 If you don't want to generate the datasets for evaluation, you can get them here: https://drive.google.com/drive/folders/1KbViJCCT7D6MfzlPl0kBjDZeEYGLgdw2?usp=sharing
 
