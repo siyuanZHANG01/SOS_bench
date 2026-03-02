@@ -93,7 +93,7 @@ Multi-thread evaluation is similar. Example command:
   --threads=48 \
   --round_ops=10000000000 \
   --dispatch=random \
-  --index=${idx} \
+  --index=alexol \
   --output_path=./out_mullookup.txt
 ```
 
