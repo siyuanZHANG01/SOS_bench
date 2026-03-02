@@ -74,6 +74,8 @@ If you do not want to simulate distribution changes and only want to simulate ar
 - `--total_num` (working-set size)
 - `--gen_num` (total dataset size)
 
+Then, use batch_jitter_to_bin.py to remove duplicate keys and convert the key dataset to binary format.
+
 ## 3) Dataset sizes used in the experiments
 
 This section summarizes the dataset-size parameters used in our evaluations. In all cases below, set the **window size** equal to the **working-set length** when running the benchmark (i.e., use `--time_window` = working set size).
