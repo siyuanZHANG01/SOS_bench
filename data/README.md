@@ -64,6 +64,16 @@ python3 data_generator.py \
 
 `Com` mode is the dedicated mode for generating distribution-drift data, and `avg_w_global` is the average working-set size you want.
 
+If you do not want to simulate arrival-rate changes and only want to simulate distribution changes, you can provide `num_axis.json` yourself:
+- on the i-th line/row, the first column is the number of keys in the i-th stable period
+- the second column is the number of keys in the transition period
+- the third column is currently overridden by the parameter `avg_w_global`
+
+If you do not want to simulate distribution changes and only want to simulate arrival-rate changes, you can use `Div` mode and only provide:
+- `mixture.json` (the hardness of the first distribution)
+- `--total_num` (working-set size)
+- `--gen_num` (total dataset size)
+
 ## 3) Dataset sizes used in the experiments
 
 This section summarizes the dataset-size parameters used in our evaluations. In all cases below, set the **window size** equal to the **working-set length** when running the benchmark (i.e., use `--time_window` = working set size).
@@ -93,14 +103,4 @@ python3 hardness_translation.py [your hardness] [local/global] [working set size
 ```
 
 Then, provide the converted normalized MSE in the JSON files used by the generator.
-
-If you do not want to simulate arrival-rate changes and only want to simulate distribution changes, you can provide `num_axis.json` yourself:
-- on the i-th line/row, the first column is the number of keys in the i-th stable period
-- the second column is the number of keys in the transition period
-- the third column is currently overridden by the parameter `avg_w_global`
-
-If you do not want to simulate distribution changes and only want to simulate arrival-rate changes, you can use `Div` mode and only provide:
-- `mixture.json` (the hardness of the first distribution)
-- `--total_num` (working-set size)
-- `--gen_num` (total dataset size)
 
