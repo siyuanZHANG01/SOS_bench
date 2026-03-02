@@ -12,8 +12,20 @@ Benchmarking various learned indexes on datasets of varying hardness and shiftin
 - **Intel TBB**: 2020.1
 - **jemalloc**
 - **OpenMP**
-
 > You can quickly set up the environment using the **Dockerfile** provided in this repository.
+
+## Build
+
+build with CMake inside the container:
+
+```bash
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+cmake --build build -j
+```
+
+The benchmark binary will be at:
+
+- **`build/microbench`**
 
 ## Usage & Exploration
 
