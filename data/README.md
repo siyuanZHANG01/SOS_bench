@@ -64,7 +64,27 @@ python3 data_generator.py \
 
 `Com` mode is the dedicated mode for generating distribution-drift data, and `avg_w_global` is the average working-set size you want.
 
-## 3) Notes
+## 3) Dataset sizes used in the experiments
+
+This section summarizes the dataset-size parameters used in our evaluations. In all cases below, set the **window size** equal to the **working-set length** when running the benchmark (i.e., use `--time_window` = working set size).
+
+- **No distribution shift, no arrival-rate shift**:
+  - Generate data by directly running `data_generator.py` in `Div` mode, with working-set size **100M** and total dataset size **500M**.
+
+- **Distribution shift, no arrival-rate shift**:
+  - Generate data by directly running `data_generator.py` in `Com` mode, with working-set size **100M** and total dataset size extended to **750M**, in order to cover the entire distribution-shift process.
+  - Specify the number of keys in each stable period / transition period via `num_axis.json` (the current `num_axis.json` in this project corresponds to that configuration).
+
+- **No distribution shift, arrival-rate shift**:
+  - First, generate the timestamps using:
+
+```bash
+python3 generate_ts_new.py 1000000000 7000000000 100000000 events2.json --ts-file-type binary --format lines --out ts2.bin --dis-out test2.json --trim-forced-tail
+```
+
+  - Then, in `Div` mode, generate the key dataset with working-set size **100M** and total dataset size **500M**, and pass both the key dataset and the timestamp dataset to the evaluation program.
+
+## 4) Notes
 
 For follow-up, deeper development work on data distribution: `data_generator.py` is currently changed to accept **normalized MSE**, rather than the **unnormalized RMSE** defined in the paper. You can convert a hardness value(RMSE) into the normalized MSE by running:
 
