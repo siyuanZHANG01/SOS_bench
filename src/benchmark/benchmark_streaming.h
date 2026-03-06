@@ -1188,6 +1188,7 @@ private:
       }
     }
 
+    const size_t init_end = initial_end_idx();
     INVARIANT(static_cast<uint64_t>(ts_[0]) > 0);
     if (init_end >= static_cast<size_t>(n_)) {
       std::ostringstream oss;
